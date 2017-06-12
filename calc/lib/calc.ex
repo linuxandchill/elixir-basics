@@ -8,13 +8,14 @@ defmodule Calc do
 
   defp loop(current_value) do
     new_value = receive do 
+      #potential messages
       {:value, client_id} -> send(client_id, {:response, current_value})
       current_value
 
       {:add, value} -> current_value + value
       {:sub, value} -> current_value - value
       {:mult, value} -> current_value * value
-      {:div, value} -> current_value / value
+      {:div, value} -> round(current_value / value)
 
       invalid_request -> IO.puts("invalid request #{inspect invalid_request}")
       current_value
