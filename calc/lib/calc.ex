@@ -15,7 +15,7 @@ defmodule Calc do
       {:add, value} -> current_value + value
       {:sub, value} -> current_value - value
       {:mult, value} -> current_value * value
-      {:div, value} -> round(current_value / value)
+      {:div, value} -> current_value / value
 
       invalid_request -> IO.puts("invalid request #{inspect invalid_request}")
       current_value
