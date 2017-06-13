@@ -10,6 +10,6 @@ defmodule Funcs do
   animal = "Cat"
   #print Cat
   IO.puts animal
-  #print Dog cuz closure
+  #prints Dog cuz closure
   talk.()
 end
