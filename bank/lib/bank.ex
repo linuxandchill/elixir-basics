@@ -1,18 +1,20 @@
 defmodule Bank do
-  @moduledoc """
-  Documentation for Bank.
-  """
+  defstruct balance: 0
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Bank.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def new(balance) do 
+    %__MODULE__{balance: balance}
   end
+
+  def deposit(account, amount) do 
+    %{account | balance: account.balance + amount}
+  end
+
+  def withdraw(account, amount) do 
+    %{account | balance: account.balance - amount}
+  end
+
+  def balance(account) do
+    account.balance
+  end
+
 end
