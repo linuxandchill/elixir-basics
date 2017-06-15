@@ -12,4 +12,11 @@ defmodule Funcs do
   IO.puts animal
   #print Dog cuz closure
   talk.()
+
+  list = [1,2,3,4]
+  sum = Enum.sum(list)
+
+  IO.puts sum
+
+
 end
