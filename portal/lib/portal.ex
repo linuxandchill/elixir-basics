@@ -12,4 +12,16 @@ defmodule Portal do
     %Portal{left: left, right: right}
   end
 
+  @doc """
+    Pushes data to the right
+  """
+  def push_right(portal) do
+    case Portal.Door.pop(portal.left) do
+      :error -> :ok
+      {:ok, h} -> Portal.Door.push(portal.right, h)
+    end
+
+    # return portal
+    portal
+  end
 end
