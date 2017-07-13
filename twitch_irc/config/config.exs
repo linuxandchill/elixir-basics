@@ -3,6 +3,7 @@
 use Mix.Config
 
 config :twitch_irc, api_secret_token: "9vk23mr3orts2pvsvojk49otsaqa55"
+config :twitch_irc, oauth_access_token: "oauth:i6uyhcl4fsjenqptlc30hztrdbn0l7"
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
