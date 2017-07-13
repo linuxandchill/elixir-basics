@@ -17,6 +17,7 @@ defmodule BankAccount do
     GenServer.cast(account, {:withdraw, amount})
   end
 
+  #synchronous used when u expect something back
   def balance(account) do
     GenServer.call(account, :balance)
   end
