@@ -15,9 +15,9 @@ defmodule FileFlatten do
     |> Enum.flat_map(&_list_all("#{path}/#{&1}"))
   end
 
-  defp expand({:error, _}, path) do 
+  defp expand({:error,_ }, path) do 
     [path]
   end
 end
 
-##IO.puts FileFlatten.list_all("/home/lac/testDir")
+IO.puts FileFlatten.list_all("/home/tm/cpp")
