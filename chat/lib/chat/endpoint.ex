@@ -36,7 +36,7 @@ defmodule Chat.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_chat_key",
-    signing_salt: "secuPScq"
+    signing_salt: "cgh0QZc9"
 
   plug Chat.Router
 end

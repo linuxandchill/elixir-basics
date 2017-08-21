@@ -13,9 +13,9 @@ defmodule TwitchIrc.Application do
       # Starts a worker by calling: TwitchIrc.Worker.start_link(arg1, arg2, arg3)
       # worker(TwitchIrc.Worker, [arg1, arg2, arg3]),
       # first arg to worker is Process NAME
-      worker(ExIrc.Client, [[], [name: :irc_client]]),
+      #worker(ExIrc.Client, [[], [name: :irc_client]]),
       #Genserver handlers
-      worker(TwitchIrc, []), 
+      #worker(TwitchIrc, []), 
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

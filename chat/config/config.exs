@@ -12,7 +12,7 @@ config :chat,
 # Configures the endpoint
 config :chat, Chat.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "K61KUKQbpm8Cveafk00xPPf1Dr5sC0bP4mPtnIoru76KbHaX52isYx4MBEqc7lDC",
+  secret_key_base: "5ZaW2D1Dblsxb835DeJLLR+KCl8Q8o2256PqiiIBdbrq2hdfL9ajnEGvg1YnAlwY",
   render_errors: [view: Chat.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Chat.PubSub,
            adapter: Phoenix.PubSub.PG2]

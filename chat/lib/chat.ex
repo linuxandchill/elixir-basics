@@ -14,9 +14,7 @@ defmodule Chat do
       supervisor(Chat.Endpoint, []),
       # Start your own worker by calling: Chat.Worker.start_link(arg1, arg2, arg3)
       # worker(Chat.Worker, [arg1, arg2, arg3]),
-      #presence
-      #allows to track users as they login/out
-      supervisor(Chat.Presence, []), 
+      supervisor(Chat.Presence, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

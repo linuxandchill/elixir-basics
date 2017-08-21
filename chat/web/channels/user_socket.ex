@@ -19,8 +19,12 @@ defmodule Chat.UserSocket do
   #
   # See `Phoenix.Token` documentation for examples in
   # performing token verification on connect.
-  def connect(%{user: user}, socket) do
-    {:ok, assign(socket,:user,user)}
+  def connect(%{"user" => user}, socket) do 
+    {:ok, assign(socket, :user, user)}
+  end
+
+  def connect(_params, socket) do
+    :error 
   end
 
   # Socket id's are topics that allow you to identify all sockets for a given user:
