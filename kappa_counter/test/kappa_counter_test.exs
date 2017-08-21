@@ -1,6 +1,6 @@
-defmodule FilezTest do
+defmodule KappaCounterTest do
   use ExUnit.Case
-  doctest Filez
+  doctest KappaCounter
 
   test "the truth" do
     assert 1 + 1 == 2

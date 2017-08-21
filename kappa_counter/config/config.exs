@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :filez, key: :value
+#     config :kappa_counter, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:filez, :key)
+#     Application.get_env(:kappa_counter, :key)
 #
 # Or configure a 3rd-party app:
 #

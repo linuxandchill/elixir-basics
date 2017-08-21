@@ -1,6 +1,6 @@
-defmodule Filez do
+defmodule KappaCounter do
   @moduledoc """
-  Documentation for Filez.
+  Documentation for KappaCounter.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Filez do
 
   ## Examples
 
-      iex> Filez.hello
+      iex> KappaCounter.hello
       :world
 
   """
